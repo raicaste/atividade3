@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: #182859; 
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    background-color: #43349B;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo nav";
+}
+.logo {
+    grid-area: logo;
+    color: #f1f1f1;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem
+}
+
+nav ul li a:hover {
+    color: #D4B0FF; 
+}
+
+.hero {
+    background-color: rgba(123, 104, 238, 0.8);
+    color: #f1f1f1;
+    padding: 5rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "titles" "subtitle";
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+.hero p {
+    font-size: 2rem;
+    grid-area: subtitle;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6";
+    margin: 5rem 0;
+    padding: 0 7rem;
+}
+
+.card {
+    border-radius: 8px;
+    background-color: #7B68EE;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.card p {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.card img {
+    width: 90%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card6 {
+    grid-area: card6;
+}
+
+.card button {
+    background-color: #43349B;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card p {
+    margin-bottom: 2rem;
+}
+
+.card button:hover {
+    background-color: #761B8C;
+}
+
+.footer {
+    background-color: #43349B;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: copyright;
+}
+
+.footer-content {
+    grid-area: copyright;
+}
+
+.footer-content {
+    text-align: right; 
+}
+
+.footer-content ul {
+    list-style-type: none; 
+}
+
+.footer-content ul li {
+    margin-bottom: 20px; 
+}
+
+.footer {
+    position: relative; 
+    padding: 10px; 
+}
+
+.info-left {
+    position: absolute;
+    left: 0;
+    bottom: 1; 
+}
