@@ -1,47 +1,120 @@
-*{
-    margin: 0;
+body{
+    max-height: 100vh;
+    margin: 0; 
     padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
+
+    background: #160323;
+
+    /* font padrão */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+/* faz uma margem para não deixar os elementos dentro da classe encostar nas bordas*/
+.container {
+    margin: 20px;
 }
+
+/* faz com a tag que tiver a classe fique com o display flex */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* alinha o texto ao centro e os elementos ao centro de forma vertical PRECISA DA CLASSE FLEX*/
+.items-center{
+    text-align: center;
+    align-items: center;
+}
+
+/* alinha os elementos ao centro de forma horizontal PRECISA DA CLASSE FLEX */
+.justify-center{
+    justify-content: center;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+/* faz um espaçamento de 30px entre os elementos dentro da div */
+.gap-30{
+    gap: 30px;
+ }
+
+/* faz um espaçamento de 100px entre os elementos dentro da div */
+.gap-60{
+    gap: 60px;
+}
+
+/* faz o elemento ficar com o tamanho de 100% - PONTA A PONTA DA TELA - se tiver o container vai ser até a ponta da margem */
+.w-full{
+    width: 100%;
+}
+
+/* faz o elemento ficar invisivel */
+.hidden {
+    display: none;
+}
+
+
+/* FONTS */
 
 .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
+}
 
-  .roboto-bold {
+.roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-
-body {
-    background-color: #040016;
 }
 
-html {
-    font-size: 62.5%;
+
+/* APLICAÇÕES DO HEADER*/
+
+.back-image{
+    width: 100%;
+    padding-top: 30px;
+    background-image: url(images/image-header.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-body {
-    font-size: 1.6rem;
+.logoheader{
+    width: 200px;
+    height: 40px;
 }
 
-ul {
-    list-style-type: none;
+.register{
+    background-color: #3c0a5c;
+    color: #fff; 
+    border-radius: 5px;
+    border: none;
+
+    height: 30px;
+
+    padding: 5px;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
+
+.login{
+    background-color: #5F1B8C;
+    color: #fff; 
+    border-radius: 5px;
+    border: none;
+
+    height: 30px;
+
+    padding: 5px;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .header {
@@ -56,228 +129,68 @@ a {
     color: #f1f1f1;
 }
 
-nav {
-    grid-area: nav;
-    display: flex;
-    justify-content: flex-end;
-}
 
-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 2rem
-}
-
-nav ul li a:hover {
-    color: #D4B0FF; 
-}
-
-.hero {
-    background-color: #040016;
-    color: #f1f1f1;
-    padding: 10rem;
-    text-align: center;
-    display: grid;
-    grid-template-areas: "titles" "subtitle";
-    justify-content: center;
-    align-items: center;
-    height: 15rem;
-    max-width: 85%;
-    width: auto;
-    margin: 0 auto;
-}
-
-.hero h2 {
-    color: #A150F2; 
-    font-size: 3rem; 
-    text-align: left; 
-}
-
-.hero p {
-    font-size: 1.4rem;
-    grid-area: subtitle;
-    font-weight: regular;
-    text-align: left;
-    margin-top: 2rem;
-}
-
-.container {
-    margin: 0 90%; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-::selection {
-    background-color: #5F1B8C; 
-    color: #fff; 
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    grid-gap: 2rem;
-    grid-template-areas: 
-        "card1 card2 card3"
-        "card4 card5 card6"
-        "card7 card8 card9";
-    margin: 5rem 20rem;
-    padding: 3;
-    box-sizing: border-box;
-}
-
+/* APLICAÇÕES DOS CARDS */
 .card {
-    width: calc(100% - 1rem); 
-    margin-bottom: 3rem; 
+    width: 23rem;
+    height: auto; 
+
     border-radius: 10px;
     background-color: #090228;
-    padding: 1rem;
-    text-align: center;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
+    color: white;
+    text-align: left;
+
     position: relative;
-    height: 100%;
 }
 
 .card h2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #fff;
-    text-align: left;
     margin-top: 5px;
-    font-weight: bold;
-}
-
-.card p {
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 1rem;
-    text-align: left;
-    font-weight: lighter;
 }
 
 .card img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     position: relative;
     cursor: pointer;
 }
 
-.card .price {
+.price {
     font-size: 2rem;
     color: #A14ED9;
-    position: absolute; 
-    bottom: 50px; 
-    left: 10px; 
     font-weight: bold
 }
 
-.card1 {
-    grid-area: card1;
-}
-
-.card2 {
-    grid-area: card2;
-}
-
-.card3 {
-    grid-area: card3;
-}
-
-.card4 {
-    grid-area: card4;
-}
-
-.card5 {
-    grid-area: card5;
-}
-
-.card6 {
-    grid-area: card6;
-}
-
-.card7 {
-    grid-area: card7;
-}
-
-.card8 {
-    grid-area: card8;
-}
-
-.card9 {
-    grid-area: card9;
-}
-
-.card button {
-    color: #fff; 
+.details{
     background-color: transparent; 
     border: 1px solid #A14ED9; 
-    padding: 0.5rem 1rem;
     border-radius: 4px;
+    color: white; 
+
+    padding: 0.5rem 2rem;
+
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: absolute; 
-    bottom: 10px; 
 }
 
-.card button.details {
-    left: 10px; 
-    width: calc(50% - 15px); 
-}
-
-.card button.buy {
+.buy {
     background-color: #A14ED9; 
-    color: #fff; 
     border: 1px solid #A14ED9;
-    right: 10px; 
-    width: calc(50% - 15px); 
+    border-radius: 4px;
+    color: white; 
+    
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
 }
 
-.card p {
-    margin-bottom: 8rem;
+.buy:hover {
+    background-color: #7100a9;
+    border: 1px solid #7100a9;
 }
 
-.card button.buy:hover {
-    background-color: #301040;
-}
-
-.card button.details:hover {
+.details:hover {
     background-color: #A14ED9;
-}
-
-
-.footer {
-    background-color: #43349B;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: copyright;
-}
-
-.footer-content {
-    grid-area: copyright;
-    text-align: right; 
-}
-
-.footer-content ul {
-    list-style-type: none; 
-}
-
-.footer-content ul li {
-    margin-bottom: 20px; 
-}
-
-.footer {
-    position: relative; 
-    padding: 10px; 
-}
-
-.info-left {
-    position: absolute;
-    left: 0;
-    bottom: 1; 
 }
