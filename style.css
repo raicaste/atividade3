@@ -45,7 +45,7 @@ body{
 /* faz um espaçamento de 30px entre os elementos dentro da div */
 .gap-30{
     gap: 30px;
- }
+}
 
 /* faz um espaçamento de 40px entre os elementos dentro da div */
 .gap-40{
@@ -120,8 +120,9 @@ body{
     color: #fff; 
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 
-    height: 30px;
+    height: 35px;
 
     padding: 5px;
     padding-left: 2.25rem;
@@ -180,8 +181,9 @@ body{
     color: #fff; 
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 
-    height: 30px;
+    height: 33px;
 
     padding: 5px;
     padding-left: 3rem;
@@ -249,6 +251,7 @@ body{
     border: 1px solid #A14ED9; 
     border-radius: 4px;
     color: white; 
+    text-decoration:none;
 
     padding: 0.5rem 2rem;
 
@@ -289,6 +292,106 @@ body{
 }
 
 
+/* Estilização video */
+.div-video {
+    background-image: url(images/Arcadeimage.gif);
+    padding: 50%;
+    padding-bottom: 1px;
+    position: relative;
+}
+
+
+.div-video iframe {
+    border-radius: 20px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width:80%;
+    height: 90%;
+}
+
+.titulo {
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.colored-players {
+    color: #7100a9;
+}
+
+.flex-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(images/gameroom1.png); 
+    gap: 20px;
+}
+
+.bloco-1 img {
+    max-height: 200px;
+    width: auto;
+    border-radius: 20px 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.bloco-2 {
+    color: white;
+    margin-top: 50px;
+    font-weight: 500;
+    text-align: center;
+    flex: 1; /* Permite que o bloco 2 ocupe todo o espaço disponível */
+}
+
+.junin {
+    color: #e01c6a;
+}
+
+.bloco-3 img {
+    max-height: 250px;
+    width: auto;
+    border-radius: 20px 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* Media Query para dispositivos menores */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Altera a direção do layout para coluna em telas menores */
+        align-items: stretch; /* Estica os itens para preencher a largura total */
+    }
+    
+    .bloco-1,
+    .bloco-2,
+    .bloco-3 {
+        width: 100%; /* Faz com que os blocos ocupem toda a largura disponível */
+        margin-bottom: 20px; /* Adiciona margem inferior entre os blocos */
+    }
+
+    .bloco-1 img,
+    .bloco-3 img {
+        max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+buttons {
+    background-color: #7100a9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    transition: .4s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+buttons:hover {
+    background-color: #160323;
+    box-shadow: 0 0 0 3px #e01c6a;
+}
+
 /* Estilização do botão de envio */
 .enviar {
     background-color: #43349B;
@@ -302,6 +405,7 @@ body{
     margin-left: 100px;
     transition:  0.2s ;
 }
+
 
 .input_form {
     padding: 30px;
@@ -337,8 +441,8 @@ body{
 
 .games {
     width: auto;
-    height: 255px;
-    border-radius: 5px;
+    height: 300px;
+    border-radius: 70% 30%;
 }
 
 @media (max-width: 450px){
