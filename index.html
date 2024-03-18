@@ -22,54 +22,63 @@
 <body>
 
     <!-- Header -->
-    <header class="w-full">
+    <header class="w-full" style="padding-bottom: 50px;">
 
         <div class="back-image">
-            <div class="gap-header flex items-top containerh">
+
+            <div class="flex items-center justify-center gap-40" style="padding-top: 50px;">
 
                 <!-- logo -->
                 <img src="images/logoprojeto.png" class="logoheader" alt="logo">
 
                 <!-- links -->
-                <div class="hidden lg-block">
-                    <ul class="flex gap">
-                        <a href="#" class="link">Novidades</a>
-                        <a href="#" class="link">Promoções</a>
-                        <a href="#" class="link">Destaque</a>
-                        <a href="#" class="link">Biblioteca</a>
-                    </ul>
+                <div class="flex justify-center gap-30">
+                    <a href="#" class="linkh">Novidades</a>
+                    <a href="#" class="linkh">Promoções</a>
+                    <a href="#" class="linkh">Destaque</a>
+                    <a href="#" class="linkh">Biblioteca</a>
                 </div>
 
                 <!-- buttons -->
-                <div class="flex gap">
+                <div class="flex gap-10">
                     <button class="register">Register</button>
                     <button class="login">Login</button>
+                </div>
+            </div>
+
+            <div class="space">
+
+                <!-- Text -->
+                <div class="text-white flex justify-center items-center" style="padding-bottom: 50px;">
+                    <div class="text-header">
+                        <h1 class="font-italic roboto-bold">Assassin's Creed Valhalla</h1>
+                        <p class="roboto-light">Baixe e jogue jogos para PC de todos os gêneros em nossa plataforma!
+                            Aqui, você encontrará uma vasta seleção de títulos emocionantes, desde RPGs épicos até jogos
+                            de estratégia e simulação. Além disso, oferecemos mods, DLCs e até mesmo jogos grátis!</p>
+                        <!-- buttons -->
+                        <div class="flex gap-10 justify-center items-center">
+                            <button class="register">Observar Jogo</button>
+                            <button class="login">Comprar</button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
-            <!-- Text -->
-            <div class="items-center text-header gap containerh">
-                <h2>Títulos em Destaque</h2>
-                <p>Baixe e jogue jogos para PC de todos os gêneros em nossa plataforma! Aqui, você encontrará uma
-                    vasta seleção
-                    de títulos emocionantes, desde RPGs épicos até jogos de estratégia e simulação. Além disso,
-                    oferecemos mods,
-                    DLCs e até mesmo jogos grátis para enriquecer sua experiência de jogo. Com uma biblioteca
-                    diversificada,
-                    garantimos que há jogos para todos os gostos e preferências. Não espere mais, explore nossa
-                    coleção e
-                    mergulhe em aventuras emocionantes hoje mesmo!</p>
-            </div>
         </div>
 
     </header>
 
-
-
+    <!-- Title -->
+    <div class="back-title flex justify-end">
+        <div class="text-white container items-center skew" style="padding-bottom: 50px;">
+            <h1 class="font-italic roboto-bold" style="padding-top: 25px;">BOMBANDO AGORA!</h1>
+            <p class="roboto-light font-italic" style="margin-top: -20px;">A LISTA DOS MELHORES JOGOS DO MOMENTO!</p>
+        </div>    
+    </div>
 
     <!-- cards -->
-    <div class="container flex items-center justify-center gap-60">
+    <div class="container flex items-center justify-center gap-60" style="padding-top: 35px;">
 
         <div class="card">
             <img src="./images/AliensDarkDescent.jpeg" alt="Imagem do card 1">
@@ -214,30 +223,24 @@
 
     </div>
 
-    <div class="container2">
+
+    <div class="flex text-white gap-60 justify-center items-center" style="margin-top: 100px;">
         <img class="games" src="images/games.jpg" alt="Imagem de exemplo">
-        <form action="#" method="post">
-            <div class="input_form">
-                <h3>Solicite uma consulta gratuita</h3>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                <button class="enviar" type="submit">Enviar</button>
-            </div>
-        </form>
+
+        <div class="input_form">
+            <h3 class="items-center">Solicite uma consulta gratuita</h3>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <button class="enviar" type="submit">Enviar</button>
+        </div>
     </div>
 
-
-
-
-
     <!-- Rodapé -->
-    <footer class="footer">
-        <div class="column">
-            <h3>
-                <div class="letter"> SOBRE</div> A ZONA DE JOGOS
-            </h3>
+    <footer class="flex text-white justify-center items-center gap-10" style="margin-top: 50px;">
+        <div class="card-footer">
+            <h3>SOBRE A ZONA DE JOGOS</h3>
             <h4>Enviamos para todo o Brasil, Vídeo Games Novos e Usados com os Melhores Preços e a Maior Garantia. Loja
                 Física, Assistência Técnica e Feira de Games!</h4>
             <div class="link">
@@ -247,32 +250,24 @@
                 <a href="#" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
-        <div class="column">
-            <h3>
-                <div class="letter"> NOTICIAS</div> E CURIOSIDADES
-            </h3>
-            <a href="#" target="_blank">
-                <h5>Quanto tempo falta para terminar alone in the dark ?</h5>
-            </a>
-            <a href="#" target="_blank">
-                <h5>Arte vazada mostra suposto vilão de Marvel's Spider-Man 3</h5>
-            </a>
-            <a href="#" target="_blank">
-                <h5>Novo jogo de Dungeons and Dragons está em desenvolvimento</h5>
-            </a>
 
+        <div class="card-footer flex justify-center items-center">
+            <h3> NOTICIAS E CURIOSIDADES</h3>
+            <div style="margin-top: -100px;">
+                <a href="#" class="links" target="_blank">Quanto tempo falta para terminar alone in the dark ?</a><br>
+                <a href="#" class="links" target="_blank">Arte vazada mostra suposto vilão de Marvel's Spider-Man 3</a><br>
+                <a href="#" class="links" target="_blank">Novo jogo de Dungeons and Dragons está em desenvolvimento</a>
+            </div>
         </div>
 
-        <div class="column">
-            <h3>
-                <div class=letter>APPS</div>E PLATAFORMA
-            </h3>
-            <div class="icon">
+        <div class="card-footer flex justify-center items-center">
+            <h3>APPS E PLATAFORMA</h3>
+            <div class="icon" style="margin-top: -100px;">
                 <a href="#" target="_blank"><i class="fa-brands fa-google-play"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-app-store-ios"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-windows"></i></a>
             </div>
-        </div>
+        </div> 
     </footer>
 
 </body>
